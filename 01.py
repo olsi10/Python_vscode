@@ -188,6 +188,10 @@ print(result)
 #변수를 표현하려면 {변수}, 중괄호 + 변수 표현하려면 {{num}}
 
 ##f-string과 딕셔너리
+#딕셔너리는 특정 키에 특정 값을 연결하여 저장하는 자료 구조이다.
+#리스트와 비슷하게 사용할 수 있지만 인덱스로 값에 접근하는 것과 달리 키로 값에 접근
+#키로는 문자열, 숫자 또는 변경이 불가능한 형식이면 어떤 자료형이든 사용할 수 있다.
 d=  {'name' : 'Mirim', 'gender' : 'female', 'age': 18}
 result = f'my name {d["name"]}, gender {d["gender"]}, age {d["age"]}'
 print(result)
+

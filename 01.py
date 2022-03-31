@@ -195,3 +195,9 @@ d=  {'name' : 'Mirim', 'gender' : 'female', 'age': 18}
 result = f'my name {d["name"]}, gender {d["gender"]}, age {d["age"]}'
 print(result)
 
+#f-string과 리스트
+n = [100, 200, 300]
+print(f'list : {n[0]}, {n[1]}, {n[2]}')
+
+for v in n:
+    print(f'list with for : {v}')

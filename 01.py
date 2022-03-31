@@ -164,3 +164,30 @@ s = 'coffee'
 n = 5
 result = f'저는 {s}를 좋아합니다. 하루 {n}잔 마셔요.'
 print(result)
+
+#f-string 왼쪽정렬
+s1 = 'left'
+result = f'|{s1:<}|'
+print(result)
+
+#f-string 가운데 정렬
+s2 = 'mid'
+result2 = f'|{s2:^10}|'
+print(result2)
+
+#f-string 오른쪽 정렬
+s3 = 'right'
+result3 = f'|{s3:>10}|'
+print(result3)
+
+#f-string에서 중괄호 출력 방법
+num = 10
+result = f'my age {num}, {{num}}, {{{num}}}'
+print(result)
+
+#변수를 표현하려면 {변수}, 중괄호 + 변수 표현하려면 {{num}}
+
+##f-string과 딕셔너리
+d=  {'name' : 'Mirim', 'gender' : 'female', 'age': 18}
+result = f'my name {d["name"]}, gender {d["gender"]}, age {d["age"]}'
+print(result)

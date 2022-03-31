@@ -66,20 +66,57 @@
 # print(complex('1.23+455.6j'))
 # print(str(1.23))
 
-print("Hello"*5)
+# print("Hello"*5)
 
-a = 2
-b = 1
-s = "구구단 {0} x {1} = {2}".format(a, b, a*b)
+# a = 2
+# b = 1
+# s = "구구단 {0} x {1} = {2}".format(a, b, a*b)
+# print(s)
+
+# for a in range(2, 10):
+#     print('{0}단'.format(a))
+#     for b in range(1, 10):
+#         print('{0} * {1} = {2:2}'.format(a, b, a*b))
+
+# #############들여쓰기의 중요성
+# for a in range(2, 10):
+#     print('{0}단'.format(a))
+# for b in range(1, 10):
+#     print('{0} * {1} = {2:2}'.format(a, b, a*b))
+
+#print('ddd왔나요?')
+#print('eee왔나요?')
+#print('qqq왔나요?')
+
+#공통적 처리 : print('%s 왔나요?' % name[i]) 사용
+
+###############서식문자
+
+# % 기호 뒤에 자료형을 가리키는 문자 사용
+
+#ex)  정수 출력시
+
+num = 50
+s = 'my age %d' % num
+
 print(s)
 
-for a in range(2, 10):
-    print('{0}단'.format(a))
-    for b in range(1, 10):
-        print('{0} * {1} = {2:2}'.format(a, b, a*b))
+#문자열 %s
+# 정수 %d
+# 실수 %f
+# 8진수 %o
+# 16진수 %x
+# 문자표현 %%#
 
-#들여쓰기의 중요성
-for a in range(2, 10):
-    print('{0}단'.format(a))
-for b in range(1, 10):
-    print('{0} * {1} = {2:2}'.format(a, b, a*b))
+##########formatting 해야 하는 수가 두 개 이상일 때
+
+names = ['kim', 'park', 'lee']
+for name in names:
+    print('my name is %s' % name)
+
+money = 10000
+s2 = 'give me %d won' % money
+print(s2)
+
+d = 3.141592
+print('value %f' % d)

@@ -108,8 +108,6 @@ print(s)
 # 16진수 %x
 # 문자표현 %%#
 
-##########formatting 해야 하는 수가 두 개 이상일 때
-
 names = ['kim', 'park', 'lee']
 for name in names:
     print('my name is %s' % name)
@@ -120,3 +118,16 @@ print(s2)
 
 d = 3.141592
 print('value %f' % d)
+
+##########formatting 해야 하는 수가 두 개 이상일 때
+
+s1 = 'my name is %s age : %d' % ('mirim', 100)
+print(s1)
+
+age = 78
+money = 20000
+name = 'Jang'
+weight = 63.12
+etc = 'asdf'
+s2 = 'my name is %s, age : %d, weight  : %f, money : %d, etc : %s' % (name, age, weight, money, etc)
+print(s2)

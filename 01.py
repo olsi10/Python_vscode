@@ -251,3 +251,14 @@ print(len(strB))
 #자료형
 #숫자형, 문자열, 리스트, 사전, 튜플, 세트
 
+
+#클래스 안에 정의된 것 -> 메소드
+
+#type
+strA = "Hello python"
+x = 5
+y = 3.14
+
+print(type(strA))
+print(type(x))
+print(type(y))

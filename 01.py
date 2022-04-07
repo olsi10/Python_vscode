@@ -239,7 +239,7 @@ print(len(strB))
 #파이썬에서는 ""와 "를 구분하지 않음
 
 #불린형식
-#Ture, False 사용
+#Ture, False 사용 (대문자로 시작)
 
 #파이썬키워드
 #파이썬 언어에서 제공되는 기본적인 문장
@@ -248,17 +248,54 @@ print(len(strB))
 #파이썬 키워드는 대략 35개
 #####키워드는 서치해서 찾아보기####
 
+import keyword
+print(keyword.kwlist)
+
 #자료형
-#숫자형, 문자열, 리스트, 사전, 튜플, 세트
+#숫자형 정수 실수
+#문자열 문자들의 모음
+#리스트 순서를 가지는 파이썬의 임의 객체 집합 [] 사용
+#사전   순서를 가지지 않는 객체의 집합, 키로 값을 꺼낸다. {} 사용
+#튜플   순서를 가지는 파이썬의 임의 객체 집합으로 내용 변경이 안됨 ()
+#세트   순서를 가지지 않는 유일한 값의 집합형태로 사용, 합집합, 교집합, 차집합을 구할 경우 사용 {}1
+
 
 
 #클래스 안에 정의된 것 -> 메소드
 
 #type
-strA = "Hello python"
-x = 5
-y = 3.14
+# strA = "Hello python"
+# x = 5
+# y = 3.14
 
-print(type(strA))
-print(type(x))
-print(type(y))
+# print(type(strA))
+# print(type(x))
+# print(type(y))
+
+#
+# \n 줄바꿈
+# \t 탭
+# \r 캐리지 반환
+# \0 널
+# \\ \문자
+# \' 단일부호
+# \" 부호
+
+# print("py""thon")
+# print("py" + "thon")
+# print("py"*3)
+
+# strA = "python"
+# print(strA[0])
+
+# #0부터 시작하고 끝부분에서는 자기번호 제외
+# print(strA[0:1]) #1까지 나옴
+# print(strA[1:3]) #yt
+# print(strA[:2])
+# print(strA[-2:])
+# print(strA[:])
+
+str8 = "python is powerful"
+print(str8[0])
+print(str[0:8])
+print(str[:6])

@@ -144,46 +144,46 @@
 #문자열에서 특정 부분만 바구고 나머지 부분은 일정하다고 할 때
 #문자열 포매팅을 이용해서 보기
 
-month = 1
+# month = 1
 
-while month <= 12:
-     print(f'2020년 {month}월')
-     month = month + 1 #증감
+# while month <= 12:
+#      print(f'2020년 {month}월')
+#      month = month + 1 #증감
 
-#변해야 하는 값이 있느 위치를 포매팅 할 위치를 잡아서 설정
+# #변해야 하는 값이 있느 위치를 포매팅 할 위치를 잡아서 설정
 
-#f-string이란?
-#f-string 포매팅은 파이썬 버전 3.6부터 사용할 수 있음
-#f-string의 모양은 f와 {}만 알면 됨
-#문자열 맨 앞에 f를 붙여주고,
-#중괄호 안에 직접 변수 이름이나 출력하고 싶은 것을 바로 넣으면 됨
-#f'문자열 {변수} 문자열'
+# #f-string이란?
+# #f-string 포매팅은 파이썬 버전 3.6부터 사용할 수 있음
+# #f-string의 모양은 f와 {}만 알면 됨
+# #문자열 맨 앞에 f를 붙여주고,
+# #중괄호 안에 직접 변수 이름이나 출력하고 싶은 것을 바로 넣으면 됨
+# #f'문자열 {변수} 문자열'
 
-#문자열 맨 앞에 f를 붙이고 출력할 변수, 값을 중괄호 안에 넣습니다.
-s = 'coffee'
-n = 5
-result = f'저는 {s}를 좋아합니다. 하루 {n}잔 마셔요.'
-print(result)
+# #문자열 맨 앞에 f를 붙이고 출력할 변수, 값을 중괄호 안에 넣습니다.
+# s = 'coffee'
+# n = 5
+# result = f'저는 {s}를 좋아합니다. 하루 {n}잔 마셔요.'
+# print(result)
 
-#f-string 왼쪽정렬
-s1 = 'left'
-result = f'|{s1:<}|'
-print(result)
+# #f-string 왼쪽정렬
+# s1 = 'left'
+# result = f'|{s1:<}|'
+# print(result)
 
-#f-string 가운데 정렬
-s2 = 'mid'
-result2 = f'|{s2:^10}|'
-print(result2)
+# #f-string 가운데 정렬
+# s2 = 'mid'
+# result2 = f'|{s2:^10}|'
+# print(result2)
 
-#f-string 오른쪽 정렬
-s3 = 'right'
-result3 = f'|{s3:>10}|'
-print(result3)
+# #f-string 오른쪽 정렬
+# s3 = 'right'
+# result3 = f'|{s3:>10}|'
+# print(result3)
 
-#f-string에서 중괄호 출력 방법
-num = 10
-result = f'my age {num}, {{num}}, {{{num}}}'
-print(result)
+# #f-string에서 중괄호 출력 방법
+# num = 10
+# result = f'my age {num}, {{num}}, {{{num}}}'
+# print(result)
 
 #변수를 표현하려면 {변수}, 중괄호 + 변수 표현하려면 {{num}}
 
@@ -191,16 +191,16 @@ print(result)
 #딕셔너리는 특정 키에 특정 값을 연결하여 저장하는 자료 구조이다.
 #리스트와 비슷하게 사용할 수 있지만 인덱스로 값에 접근하는 것과 달리 키로 값에 접근
 #키로는 문자열, 숫자 또는 변경이 불가능한 형식이면 어떤 자료형이든 사용할 수 있다.
-d=  {'name' : 'Mirim', 'gender' : 'female', 'age': 18}
-result = f'my name {d["name"]}, gender {d["gender"]}, age {d["age"]}'
-print(result)
+# d=  {'name' : 'Mirim', 'gender' : 'female', 'age': 18}
+# result = f'my name {d["name"]}, gender {d["gender"]}, age {d["age"]}'
+# print(result)
 
-#f-string과 리스트
-n = [100, 200, 300]
-print(f'list : {n[0]}, {n[1]}, {n[2]}')
+# #f-string과 리스트
+# n = [100, 200, 300]
+# print(f'list : {n[0]}, {n[1]}, {n[2]}')
 
-for v in n:
-    print(f'list with for : {v}')
+# for v in n:
+#     print(f'list with for : {v}')
 
 #리스트는 리스트 변수명을 사용하고 리스트 개수만큼 돌림
 #인덱스 값처럼 돌아감. 생산성 부분에서는 좋다. 문장의 단순화
@@ -221,8 +221,8 @@ for v in n:
 #API(Application Programming Interface)
 #len()이라는 내장 함수를 입력 파라메터(입력 데이터)로 넘겨진 문자열의 길이를 리턴한다
 
-strB = "파이썬 연습"
-print(len(strB))
+# strB = "파이썬 연습"
+# print(len(strB))
 #6자리인 것을 보면 유니코드 사용
 
 #변수명
@@ -248,8 +248,8 @@ print(len(strB))
 #파이썬 키워드는 대략 35개
 #####키워드는 서치해서 찾아보기####
 
-import keyword
-print(keyword.kwlist)
+# import keyword
+# print(keyword.kwlist)
 
 #자료형
 #숫자형 정수 실수
@@ -296,6 +296,38 @@ print(keyword.kwlist)
 # print(strA[:])
 
 str8 = "python is powerful"
-print(str8[0])
-print(str[0:8])
-print(str[:6])
+# print(str8[0])
+# print(str8[0:8])
+# print(str8[:6])
+
+# print(str8[-1])
+# print(str8[-2])
+# print(str8[-3:1])
+# print(str8[-8:])
+
+# print(str8[::2])
+# #시작, 끝 간격 두 칸씩 띄고 출력
+# print(str8[7:18])
+
+# print(str8[-11:9])
+# print(str8[-18:10])
+
+#리스트 : 값의 나열
+#데이터를 모아 놓은 목록 / 순서가 존재하며 여러가지 자료형 담을 수 있음 / 다른 프로그래밍 언어의 배열 대신 사용
+
+colors = ['red', 'green', 'blue']
+print(colors)
+print(type(colors))
+#type list
+
+#append (요소의 추가) = 기존 리스트에 값을 추가 = 제일 끝으로 들어감
+
+print(colors)
+colors.append("blue")
+print(colors)
+
+#insert = 원하는 위치에 추가
+
+print(colors)
+colors.insert(1, 'black') #nnnn.insert(들어갈 자리, 추가할 요소)
+print(colors)

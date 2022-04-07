@@ -295,39 +295,61 @@
 # print(strA[-2:])
 # print(strA[:])
 
-str8 = "python is powerful"
-# print(str8[0])
-# print(str8[0:8])
-# print(str8[:6])
+# str8 = "python is powerful"
+# # print(str8[0])
+# # print(str8[0:8])
+# # print(str8[:6])
 
-# print(str8[-1])
-# print(str8[-2])
-# print(str8[-3:1])
-# print(str8[-8:])
+# # print(str8[-1])
+# # print(str8[-2])
+# # print(str8[-3:1])
+# # print(str8[-8:])
 
-# print(str8[::2])
-# #시작, 끝 간격 두 칸씩 띄고 출력
-# print(str8[7:18])
+# # print(str8[::2])
+# # #시작, 끝 간격 두 칸씩 띄고 출력
+# # print(str8[7:18])
 
-# print(str8[-11:9])
-# print(str8[-18:10])
+# # print(str8[-11:9])
+# # print(str8[-18:10])
 
-#리스트 : 값의 나열
-#데이터를 모아 놓은 목록 / 순서가 존재하며 여러가지 자료형 담을 수 있음 / 다른 프로그래밍 언어의 배열 대신 사용
+# #리스트 : 값의 나열
+# #데이터를 모아 놓은 목록 / 순서가 존재하며 여러가지 자료형 담을 수 있음 / 다른 프로그래밍 언어의 배열 대신 사용
 
 colors = ['red', 'green', 'blue']
-print(colors)
-print(type(colors))
+#print(colors)
+#print(type(colors))
 #type list
 
 #append (요소의 추가) = 기존 리스트에 값을 추가 = 제일 끝으로 들어감
 
-print(colors)
+#print(colors)
 colors.append("blue")
-print(colors)
+#print(colors)
 
 #insert = 원하는 위치에 추가
 
-print(colors)
+#print(colors)
 colors.insert(1, 'black') #nnnn.insert(들어갈 자리, 추가할 요소)
+#print(colors)
+
+#index = 어떤 값이 어디에 있는지 확인 (append 와 동일)
+
+#2번재 인자를 지정하지 않으면 처음부터 검색, 지정하면 지정된 방 번호 이후의 아이템 방 번호 리턴
+
+#print(colors)                 
+#print(colors.index("red"))      
+colors+= ["red"]               
+#print(colors)                   
+#print(colors.index("red", 1))
+colors+= "red"
+#print(colors)
+
+#리스트 메서드 - count() 현재 해당 값 개수를 반환, pop() 값을 뽑아내서 반환
+
 print(colors)
+print(colors.count("red"))
+print(colors.pop())
+print(colors.pop())
+print(colors.pop(1))
+print(colors)
+print()

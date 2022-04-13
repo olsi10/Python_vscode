@@ -395,24 +395,38 @@ colors = ['red', 'green', 'blue']
 # 유일한 값의 모임이며 순서는 없다
 
 #set
-a = {1,2,3,4}
-b = {3,4,4,5}
+# a = {1,2,3,4}
+# b = {3,4,4,5}
 
-#a= (1,2,3)
-#print(type(a))
+# #a= (1,2,3)
+# #print(type(a))
 
-#중복되는 값 삭제
+# #중복되는 값 삭제
 
-print(a)
-print(b)
-print(type(a))
-print(type(b))
+# print(a)
+# print(b)
+# print(type(a))
+# print(type(b))
 
-print()
+# print()
 
-print(a.union(b))
-print(a.intersection(b))
-print(a.difference(b))
+# print(a.union(b))
+# print(a.intersection(b))
+# print(a.difference(b))
 
 #------------------------------------------------------------------------------------------------------
 
+#튜플이 주로 사용되는 경우 - 함수에서 하나 이상의 값을 리턴하는 경우
+# def calc (a, b):
+#     return a + b, a* b
+
+# x, y= calc(5, 4)
+# print(x, y)
+
+# def num(a, b, c):
+#     return a+b, a-b, a*c
+
+# x, y, z = num(2, 4, 5)
+# print(x, y, z)
+
+print("id : %s, name : %s" % ("kim", "김유신"))

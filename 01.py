@@ -323,33 +323,96 @@ colors = ['red', 'green', 'blue']
 #append (요소의 추가) = 기존 리스트에 값을 추가 = 제일 끝으로 들어감
 
 #print(colors)
-colors.append("blue")
-#print(colors)
+# colors.append("blue")
+# #print(colors)
 
-#insert = 원하는 위치에 추가
+# #insert = 원하는 위치에 추가
 
-#print(colors)
-colors.insert(1, 'black') #nnnn.insert(들어갈 자리, 추가할 요소)
-#print(colors)
+# #print(colors)
+# colors.insert(1, 'black') #nnnn.insert(들어갈 자리, 추가할 요소)
+# #print(colors)
 
-#index = 어떤 값이 어디에 있는지 확인 (append 와 동일)
+# #index = 어떤 값이 어디에 있는지 확인 (append 와 동일)
 
-#2번재 인자를 지정하지 않으면 처음부터 검색, 지정하면 지정된 방 번호 이후의 아이템 방 번호 리턴
+# #2번재 인자를 지정하지 않으면 처음부터 검색, 지정하면 지정된 방 번호 이후의 아이템 방 번호 리턴
 
-#print(colors)                 
-#print(colors.index("red"))      
-colors+= ["red"]               
-#print(colors)                   
-#print(colors.index("red", 1))
-colors+= "red"
-#print(colors)
+# #print(colors)                 
+# #print(colors.index("red"))      
+# colors+= ["red"]               
+# #print(colors)                   
+# #print(colors.index("red", 1))
+# colors+= "red"
+# #print(colors)
 
-#리스트 메서드 - count() 현재 해당 값 개수를 반환, pop() 값을 뽑아내서 반환
+# #리스트 메서드 - count() 현재 해당 값 개수를 반환, pop() 값을 뽑아내서 반환
 
-print(colors)
-print(colors.count("red"))
-print(colors.pop())
-print(colors.pop())
-print(colors.pop(1))
-print(colors)
+# print(colors)
+# print(colors.count("red"))
+# print(colors.pop()) #d 아웃
+# print(colors.pop()) #e 아웃
+# print(colors.pop(1))#black 아웃
+# print(colors)
+# print()
+
+# #리스트 메서드 - remove() 단순히 해당 값을 삭제, extend() 데이터 추가
+
+# print(colors)
+# print(colors.remove("red")) #remove는 프린트 x (none 나옴) 제거한 값 되돌리기 = pop, 그냥 제거하고 싶다면 remove
+# colors.remove("red")
+# print(colors)
+
+# print()
+
+# print(colors)
+# colors.extend(["blue", "yellow", "white"])
+# print(colors)
+
+# print(colors.extend(["blue"])) # none 출력
+
+# #리스트 메서드 - sort() 오름차순 정렬, reverse() 내림차순 정렬
+
+# print(colors)
+
+# print()
+
+# colors.sort()
+# print(colors)
+
+# print()
+
+# colors.reverse()
+# print(colors)
+
+# tuple 튜플
+#리스트와 유사 : 순서가 존재
+#리스트와 달리 [] 대신 ()로 묶어서 표현하며 읽기 전용
+#제공되는 함수는 리스트에 비해적지만 속도는 그만큼 빠르다
+#튜플은 일반적인 경우에 데이터를 묶어서 한번에 전달하거나 여러 개의 값을 묶어서 한번에 반환할 경우에 사용됩니다.
+#자동 완성 기능을 통해서 보면 시레 제공되는 메서드가 count(), index() 정도만 제공됨
+
+# set(세트) union, intersection, difference
+# 수학시간에 배운 집합과 동일
+# 유일한 값의 모임이며 순서는 없다
+
+#set
+a = {1,2,3,4}
+b = {3,4,4,5}
+
+#a= (1,2,3)
+#print(type(a))
+
+#중복되는 값 삭제
+
+print(a)
+print(b)
+print(type(a))
+print(type(b))
+
 print()
+
+print(a.union(b))
+print(a.intersection(b))
+print(a.difference(b))
+
+#------------------------------------------------------------------------------------------------------
+

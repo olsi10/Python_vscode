@@ -417,16 +417,23 @@ colors = ['red', 'green', 'blue']
 #------------------------------------------------------------------------------------------------------
 
 #튜플이 주로 사용되는 경우 - 함수에서 하나 이상의 값을 리턴하는 경우
-# def calc (a, b):
-#     return a + b, a* b
+def calc (a, b):
+    return a + b, a* b
 
-# x, y= calc(5, 4)
-# print(x, y)
+x, y= calc(5, 4)
+print(x, y)
 
-# def num(a, b, c):
-#     return a+b, a-b, a*c
+def num(a, b, c):
+    return a+b, a-b, a*c
 
-# x, y, z = num(2, 4, 5)
-# print(x, y, z)
+x, y, z = num(2, 4, 5)
+print(x, y, z)
 
-print("id : %s, name : %s" % ("kim", "김유신"))
+#print("id : %s, name : %s" % ("kim", "김유신"))
+
+args = (3, 4)
+print(calc(*args))
+# * -> 포인터 기능
+
+args2 = (4, 5, 10)
+print(num(*args2))

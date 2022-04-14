@@ -464,6 +464,14 @@ colors = ['red', 'green', 'blue']
 
 #리스트 세트 튜플은 다음과 같이 생성자list(), set(), tuple()을 이용해서 서로 변환 가능
 
-a = set((1,2,3))
+a = set((1,2,3,2)) #tuple -> set
 print(a)
-print(type(a))
+print(type(a)) #set은 중복되는 수를 제거하기 때문에 2는 잘려서 나옴
+
+b = list(a) #set -> list
+print(b)
+print(type(b))
+
+c = tuple(b) #list -> tuple
+print(c)
+print(type(c)) 

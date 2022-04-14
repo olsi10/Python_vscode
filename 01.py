@@ -506,22 +506,46 @@ colors = ['red', 'green', 'blue']
 # del device["아이폰"]
 # print(device)
 
-phone = {"kim" : "1111", "Lee" : "2222", "park" : "3333"}
-print(phone.keys())
+# phone = {"kim" : "1111", "Lee" : "2222", "park" : "3333"}
+# print(phone.keys())
 
-print(phone.values())
+# print(phone.values())
 
-print("park" in phone)
-print("moon" in phone)
+# print("park" in phone)
+# print("moon" in phone)
 
-p = phone
-print(p)
+# p = phone
+# print(p)
 
-d = {"a" : 100, "b" : 200, "c" : 300}
+# d = {"a" : 100, "b" : 200, "c" : 300}
 
-for key in d.keys():
-    print(key)
+# for key in d.keys():
+#     print(key)
 
-for value in d.values():
-    print(value)
+# for value in d.values():
+#     print(value)
+
+#문자형 숫자형을 제외한 나머지의 대각의 모양과 특징을 하나씩 알아볼 것임
+
+### bool (boolean)
+
+#사용 가능 값 : true, false
+#수치를 논리연산자에 사용하는 경우
+##0은 False로 간주
+##음수를 포함한 다른 값은 모두 True로 간주
+
+#문자열을 논리연산자에 사용하는 경우에도 "만 False로 간주
+#값이 없는 상태를 나타내는 None 도 False
+
+isRight = False
+print(type(isRight))
+
+print(1 < 2)
+print(1 != 2)
+print(1 == 2)
+print(True and True and False)
+print(True or False or False)
+
+print("") #false
+print(" ")#true
 

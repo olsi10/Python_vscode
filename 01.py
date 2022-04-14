@@ -662,3 +662,21 @@ print(hex(id(arr4)))
 # print(f"arr3 값 : {arr3} \t주소 : {hex(id(arr3))}")
 
 
+print("2. dictionary 값이 변경되면?")
+
+d1 = {'a' : 11, 'b' : 22, 'c' : 33}
+d2 = {'a' : 11, 'b' : 22, 'c' : 33}
+d3 = {'a' : 11, 'b' : 22, 'c' : 33}
+
+print(f"d1 값 : {d1} \t 주소 : {hex(id(d1))}")
+print(f"d2 값 : {d2} \t 주소 : {hex(id(d2))}")
+print(f"d3 값 : {d3} \t 주소 : {hex(id(d3))}")
+
+d1['a'] = 99
+d2['d'] = 44
+
+print()
+
+print(f"d1 값 : {d1} \t 주소 : {hex(id(d1))}")
+print(f"d2 값 : {d2} \t 주소 : {hex(id(d2))}")
+print(f"d3 값 : {d3} \t 주소 : {hex(id(d3))}")

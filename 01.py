@@ -639,24 +639,26 @@ print(hex(id(arr4)))
 
 #mutable 객체
 
-print("=" * 50)
-print("mutable 객체")
-print("=" * 50)
-print("1. List 객체 예제")
+# print("=" * 50)
+# print("mutable 객체")
+# print("=" * 50)
+# print("1. List 객체 예제")
 
-arr1 = ['a', 'b', 77]
-arr2 = ['a', 'b', 77]
-arr3 = ['a', 'b', 77]
+# arr1 = ['a', 'b', 77]
+# arr2 = ['a', 'b', 77]
+# arr3 = ['a', 'b', 77]
 
-print(f"arr1 값 : {arr1} \t주소 : {hex(id(arr1))}")
-print(f"arr2 값 : {arr2} \t주소 : {hex(id(arr2))}")
-print(f"arr3 값 : {arr2} \t주소 : {hex(id(arr3))}")
+# print(f"arr1 값 : {arr1} \t주소 : {hex(id(arr1))}")
+# print(f"arr2 값 : {arr2} \t주소 : {hex(id(arr2))}")
+# print(f"arr3 값 : {arr2} \t주소 : {hex(id(arr3))}")
 
-arr1.append(10)
-arr2.append(10)
+# arr1.append(10)
+# arr2.append(10)
 
-print()
+# print()
 
-print(f"arr1 값 : {arr1} \t주소 : {hex(id(arr1))}")
-print(f"arr2 값 : {arr2} \t주소 : {hex(id(arr2))}")
-print(f"arr3 값 : {arr3} \t주소 : {hex(id(arr3))}")
+# print(f"arr1 값 : {arr1} \t주소 : {hex(id(arr1))}")
+# print(f"arr2 값 : {arr2} \t주소 : {hex(id(arr2))}")
+# print(f"arr3 값 : {arr3} \t주소 : {hex(id(arr3))}")
+
+

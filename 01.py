@@ -462,7 +462,7 @@ colors = ['red', 'green', 'blue']
 # print(a & b)
 # print(a- b)
 
-#리스트 세트 튜플은 다음과 같이 생성자list(), set(), tuple()을 이용해서 서로 변환 가능
+###리스트 세트 튜플은 다음과 같이 생성자list(), set(), tuple()을 이용해서 서로 변환 가능
 
 a = set((1,2,3,2)) #tuple -> set
 print(a)
@@ -474,4 +474,34 @@ print(type(b))
 
 c = tuple(b) #list -> tuple
 print(c)
-print(type(c)) 
+print(type(c))
+
+###딕셔너리 -> DICTIONARY이지만 DICT로 씀
+
+d = dict(a = 1, b = 2, d = 3) #키를 통해 값을 찾음
+print(d)
+print(type(d))
+
+colors = {"apple" : "red", "banana" : "yellow"} # 키 : 값
+print(colors)
+
+colors["cherry"] = "red"
+print(colors)
+
+
+for item in colors.items(): #items에 있는 것들 하나씩 찍기
+    print(item)
+
+
+print(colors)
+del colors["cherry"]
+print(colors)
+colors.clear() #완전히 비워지는 것
+print(colors)
+
+device = {"아이폰" : 5, "아이패드": 10, "윈도우타블렛": 20} #동일한 키가 있다면 그 키의 '값'만 변경함
+device["아이맥"] = 15
+device["아이폰"] = 6
+print(device)
+del device["아이폰"]
+print(device)

@@ -398,6 +398,7 @@ colors = ['red', 'green', 'blue']
 # a = {1,2,3,4}
 # b = {3,4,4,5}
 
+#tuple
 # #a= (1,2,3)
 # #print(type(a))
 
@@ -410,30 +411,59 @@ colors = ['red', 'green', 'blue']
 
 # print()
 
-# print(a.union(b))
-# print(a.intersection(b))
-# print(a.difference(b))
+# print(a.union(b))             #합
+# print(a.intersection(b))      #교
+# print(a.difference(b))        #차
 
-#------------------------------------------------------------------------------------------------------
+#-4/14-----------------------------------------------------------------------------------------------------
 
 #튜플이 주로 사용되는 경우 - 함수에서 하나 이상의 값을 리턴하는 경우
-def calc (a, b):
-    return a + b, a* b
+# def calc (a, b):
+#     return a + b, a* b
 
-x, y= calc(5, 4)
-print(x, y)
+# x, y= calc(5, 4)
+# print(x, y)
 
-def num(a, b, c):
-    return a+b, a-b, a*c
+# def num(a, b, c):
+#     return a+b, a-b, a*c
 
-x, y, z = num(2, 4, 5)
-print(x, y, z)
+# x, y, z = num(2, 4, 5)
+# print(x, y, z)
 
-#print("id : %s, name : %s" % ("kim", "김유신"))
+# #print("id : %s, name : %s" % ("kim", "김유신"))
 
-args = (3, 4)
-print(calc(*args))
-# * -> 포인터 기능
+# args = (3, 4)
+# print(calc(*args))
+# # * -> 포인터 기능
 
-args2 = (4, 5, 10)
-print(num(*args2))
+# args2 = (4, 5, 10)
+# print(num(*args2))
+
+
+# set
+# a = {1,2,3,4}
+# b = {3,4,4,5}
+
+# #중복되는 값 삭제
+
+# print(a)
+# print(b)
+# print(type(a))
+# print(type(b))
+
+# print()
+
+# print(a.union(b))             #합
+# print(a.intersection(b))      #교
+# print(a.difference(b))        #차
+
+# #결과는 똑같음, 합교차를 기호로
+# print(a | b)
+# print(a & b)
+# print(a- b)
+
+#리스트 세트 튜플은 다음과 같이 생성자list(), set(), tuple()을 이용해서 서로 변환 가능
+
+a = set((1,2,3))
+print(a)
+print(type(a))

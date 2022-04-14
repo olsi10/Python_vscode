@@ -537,15 +537,50 @@ colors = ['red', 'green', 'blue']
 #문자열을 논리연산자에 사용하는 경우에도 "만 False로 간주
 #값이 없는 상태를 나타내는 None 도 False
 
-isRight = False
-print(type(isRight))
+# isRight = False
+# print(type(isRight))
 
-print(1 < 2)
-print(1 != 2)
-print(1 == 2)
-print(True and True and False)
-print(True or False or False)
+# print(1 < 2)
+# print(1 != 2)
+# print(1 == 2)
+# print(True and True and False)
+# print(True or False or False)
 
-print("") #false
-print(" ")#true
+# print("") #false
+# print(" ")#true
 
+################################################
+
+## mutable : 변경되는 객체(객체의 상태 변경 가능)
+## 종류 : list, set, dictionary
+
+## inmutable : 변경되지 않는 객체(객체 상태 변경 불가)
+## 종류 : int, float, str, bool
+
+##얕은 복사, 깊은 복사
+
+print("imutable 객체")
+a = 99
+b = 99
+c = 99
+d = 99
+e = 99
+
+print(hex(id(a)))
+print(hex(id(d)))
+print(hex(id(c)))
+print(hex(id(d)))
+print(hex(id(e)))
+
+print()
+print("mutable 객체")
+
+arr1 = [1,2,3]
+arr2 = [1,2,3]
+arr3 = [1,2,3]
+arr4 = [1,2,3]
+
+print(hex(id(arr1)))
+print(hex(id(arr2)))
+print(hex(id(arr3)))
+print(hex(id(arr4)))

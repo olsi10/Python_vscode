@@ -464,44 +464,64 @@ colors = ['red', 'green', 'blue']
 
 ###리스트 세트 튜플은 다음과 같이 생성자list(), set(), tuple()을 이용해서 서로 변환 가능
 
-a = set((1,2,3,2)) #tuple -> set
-print(a)
-print(type(a)) #set은 중복되는 수를 제거하기 때문에 2는 잘려서 나옴
+# a = set((1,2,3,2)) #tuple -> set
+# print(a)
+# print(type(a)) #set은 중복되는 수를 제거하기 때문에 2는 잘려서 나옴
 
-b = list(a) #set -> list
-print(b)
-print(type(b))
+# b = list(a) #set -> list
+# print(b)
+# print(type(b))
 
-c = tuple(b) #list -> tuple
-print(c)
-print(type(c))
+# c = tuple(b) #list -> tuple
+# print(c)
+# print(type(c))
 
-###딕셔너리 -> DICTIONARY이지만 DICT로 씀
+# ###딕셔너리 -> DICTIONARY이지만 DICT로 씀
 
-d = dict(a = 1, b = 2, d = 3) #키를 통해 값을 찾음
-print(d)
-print(type(d))
+# d = dict(a = 1, b = 2, d = 3) #키를 통해 값을 찾음
+# print(d)
+# print(type(d))
 
-colors = {"apple" : "red", "banana" : "yellow"} # 키 : 값
-print(colors)
+# colors = {"apple" : "red", "banana" : "yellow"} # 키 : 값
+# print(colors)
 
-colors["cherry"] = "red"
-print(colors)
-
-
-for item in colors.items(): #items에 있는 것들 하나씩 찍기
-    print(item)
+# colors["cherry"] = "red"
+# print(colors)
 
 
-print(colors)
-del colors["cherry"]
-print(colors)
-colors.clear() #완전히 비워지는 것
-print(colors)
+# for item in colors.items(): #items에 있는 것들 하나씩 찍기
+#     print(item)
 
-device = {"아이폰" : 5, "아이패드": 10, "윈도우타블렛": 20} #동일한 키가 있다면 그 키의 '값'만 변경함
-device["아이맥"] = 15
-device["아이폰"] = 6
-print(device)
-del device["아이폰"]
-print(device)
+
+# print(colors)
+# del colors["cherry"]
+# print(colors)
+# colors.clear() #완전히 비워지는 것
+# print(colors)
+
+# device = {"아이폰" : 5, "아이패드": 10, "윈도우타블렛": 20} #동일한 키가 있다면 그 키의 '값'만 변경함
+# device["아이맥"] = 15
+# device["아이폰"] = 6
+# print(device)
+# del device["아이폰"]
+# print(device)
+
+phone = {"kim" : "1111", "Lee" : "2222", "park" : "3333"}
+print(phone.keys())
+
+print(phone.values())
+
+print("park" in phone)
+print("moon" in phone)
+
+p = phone
+print(p)
+
+d = {"a" : 100, "b" : 200, "c" : 300}
+
+for key in d.keys():
+    print(key)
+
+for value in d.values():
+    print(value)
+

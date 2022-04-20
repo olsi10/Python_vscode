@@ -234,3 +234,32 @@
 
 # print("") #false
 # print(" ")#true
+
+
+#문자열, 튜플, 딕셔너리, 셋을 리스트화 시키는 것
+
+# l = []
+# player = ["Messi", 10, True]
+# list("Happy")
+# list((1125, 2436))
+# list({"menu" : "pizza", "price" : 10000})
+# list({"사과", "배"})
+nums = list(range(3))
+
+# print(l)
+# print(player)
+
+# nums + [10, 11]
+# print(nums)
+
+
+# nums += [10, 11]
+# print(nums)
+
+# print(nums + [10, 11])
+# print(nums += [10, 11])
+
+
+#append, extend 차이
+#append (리스트가 안에 통째로 들어감)
+#extend (값만 들어감 (확장))

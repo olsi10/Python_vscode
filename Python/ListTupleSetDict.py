@@ -351,20 +351,51 @@ nums = list(range(3))
 # print(x)
 # print(y)
 
-x = 2560
-y = 1440
-x, y = y, x
+# x = 2560
+# y = 1440
+# x, y = y, x
 
-print(x)
-print(y)
+# print(x)
+# print(y)
 
-a = (123, "abc", True, 123)
-print(a[1])
-print(a[2:])
-print(a[:2])
+# a = (123, "abc", True, 123)
+# print(a[1])
+# print(a[2:])
+# print(a[:2])
 
-# 시험문제 예상 a[1] = 2 # 에러!!! 튜플은 값을 변경할 수 없음
+# # 시험문제 예상 a[1] = 2 # 에러!!! 튜플은 값을 변경할 수 없음
 
-print(a.index("abc")) # 값에 해당하는 인덱스를 가져온다
+# print(a.index("abc")) # 값에 해당하는 인덱스를 가져온다
 
-print(a.count(123)) # 값에 해당하는 요소를 가져온다
+# print(a.count(123)) # 값에 해당하는 요소를 가져온다
+
+# t = (1,2,3)
+# t += (4,) # t += 4 는 오류남
+# print(t)
+
+
+
+
+# 딕셔너리 생성
+d = {}
+print(d)
+
+urls = {"google" : "google.com", 18 : "unesco.org"}
+print(urls)
+
+# 딕셔너리 요소 추가
+urls["x"] = 2560 # 키 X가 딕셔너리에 없으면 추가
+print(urls)
+
+# 딕셔너리 요소 수정
+urls["x"] = 1920
+print(urls)
+
+# 딕셔너리 요소 제거
+del urls["x"]
+urls.pop(18)
+
+print(urls)
+
+urls.clear()
+print(urls)

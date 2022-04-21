@@ -400,21 +400,64 @@ nums = list(range(3))
 # urls.clear()
 # print(urls)
 
-# 딕셔너리 요소 검색
-urls = {"google" : "google.com", 18 : "unesco.org"}
+# # 딕셔너리 요소 검색
+# urls = {"google" : "google.com", 18 : "unesco.org"}
 
-print(urls["google"])
+# print(urls["google"])
 
-print(urls.get("google"))
+# print(urls.get("google"))
 
-print("google" in urls)
-print("google.com" in urls)
-print("google.com" in urls.values())
+# print("google" in urls)
+# print("google.com" in urls)
+# print("google.com" in urls.values())
 
-# 딕셔너리 관련 함수
-print(len(urls))
+# # 딕셔너리 관련 함수
+# print(len(urls))
 
-print(urls.keys())
-print(urls.values())
-print(urls.items())
+# print(urls.keys())
+# print(urls.values())
+# print(urls.items())
 
+# 셋 = 중복없는 자료형
+
+# 셋 생성
+# game = {"LOL", "Overwatch", "Tetris", 1942, 2048}
+# print(game)
+
+# print(set("Funny"))
+# print(set([2048, "Tetris", "Cube"]))
+# print([2560, 1440])
+# print(set({"google" : "google.com", 18 : "unesco.org"}))
+# print(set(range(3)))
+
+# # 셋 추가
+# game.add("Fifa")
+# print(game)
+
+# game.update(("NBA", "MLB"))
+# print(game)
+
+# # 셋 제거
+# game.remove("LOL")
+# print(game)
+
+# 셋 연산
+
+# 교집합
+s3 = {3,6,9,12}
+s4 = {4,8,12,16}
+print(s3 & s4)
+print(s3.intersection(s4))
+
+# 합집합
+print(s3 | s4)
+print(s3.union(s4))
+
+# 차집합
+print(s3-s4)
+print(s3.difference(s4))
+
+# 대칭 차집합
+
+print(s3 ^ s4)
+print(s3.symmetric_difference(s4))

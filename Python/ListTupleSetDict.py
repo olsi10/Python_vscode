@@ -246,6 +246,9 @@
 # list((1125, 2436))
 # list({"menu" : "pizza", "price" : 10000})
 # list({"사과", "배"})
+from re import X
+
+
 nums = list(range(3))
 
 # nums + [10, 11]
@@ -338,12 +341,26 @@ nums = list(range(3))
 # print(xy + color)
 # print(xy * 2)
 
-color = 129, 247, 216 #패킹 = 괄호를 하나로 생략해도 묶어서 대입, 여러 개로 대입할 때도 하나씩 들어감
-red, green, blue = color  #언패킹
+# color = 129, 247, 216 #패킹 = 괄호를 하나로 생략해도 묶어서 대입, 여러 개로 대입할 때도 하나씩 들어감
+# red, green, blue = color  #언패킹
 
-print(red)
-print(green)
-print(blue)
-x, y = 1920, 1080
+# print(red)
+# print(green)
+# print(blue)
+# x, y = 1920, 1080
+# print(x)
+# print(y)
+
+x = 2560
+y = 1440
+x, y = y, x
+
 print(x)
 print(y)
+
+a = (123, "abc", True, 123)
+print(a[1])
+print(a[2:])
+print(a[:2])
+
+a[1] = 2 # 에러!!! 튜플은 값을 변경할 수 없음

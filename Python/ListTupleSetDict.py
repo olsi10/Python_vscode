@@ -246,9 +246,6 @@
 # list({"사과", "배"})
 nums = list(range(3))
 
-# print(l)
-# print(player)
-
 # nums + [10, 11]
 # print(nums)
 
@@ -256,43 +253,49 @@ nums = list(range(3))
 # nums += [10, 11]
 # print(nums)
 
-# print(nums + [10, 11])
-# print(nums += [10, 11])
+# #append, extend 차이
+# #append (리스트가 안에 통째로 들어감)
+# #extend (값만 들어감 (확장))
+
+# nums.append(20)
+# print(nums)
+
+# nums.append([30, 31])
+# print(nums)
+
+# nums.insert(2, 40)
+# print(nums)
+
+# nums.extend([50, 51])
+# print(nums)
 
 
-#append, extend 차이
-#append (리스트가 안에 통째로 들어감)
-#extend (값만 들어감 (확장))
+# #요소 수정
+# nums[7] = 60
+# print(nums[7]) #[30, 31]
 
-nums.append(20)
-print(nums)
 
-nums.append([30, 31])
-print(nums)
 
-nums.insert(2, 40)
-print(nums)
+# #요소 삭제
+# del nums[2]
+# print(nums)
 
-nums.extend([50, 51])
-print(nums)
+# print(nums.remove(20)) #중복되는 값이 있을 때 앞에 있는 값을 지움
 
-nums[7] = 60
-print(nums[7]) #[30, 31]
+# print(nums.pop())
+# #print(nums)
 
-del nums[2]
-print(nums)
+# print(nums.pop(2))
+# #print(nums)
 
-print(nums.remove(20))
-
-nums.pop()
-print(nums)
-
-nums.pop(5)
-print(nums)
+# print(nums.append(10))
 
 nums.clear()
 print(nums)
 
+
+
+#요소 검색
 nums = list(range(3))
 print(nums)
 
@@ -301,8 +304,7 @@ print(nums)
 
 print(nums[3])
 
-for nums in 3:
-    print(nums)
 
-for nums in 10:
-    print(nums)
+#값 in 리스트 = 리스트에 값이 있는지 확인
+print(3 in nums) # 3 없어서 False
+print(10 in nums) # 10 있어서 True

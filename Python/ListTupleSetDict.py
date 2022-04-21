@@ -461,3 +461,5 @@ print(s3.difference(s4))
 
 print(s3 ^ s4)
 print(s3.symmetric_difference(s4))
+
+## 다음 수업은 연습문제 복습하기

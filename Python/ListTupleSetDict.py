@@ -235,6 +235,8 @@
 # print("") #false
 # print(" ")#true
 
+####################################0421 복습#######################################
+
 
 #문자열, 튜플, 딕셔너리, 셋을 리스트화 시키는 것
 
@@ -290,21 +292,58 @@ nums = list(range(3))
 
 # print(nums.append(10))
 
-nums.clear()
-print(nums)
+# nums.clear()
+# print(nums)
 
 
 
-#요소 검색
-nums = list(range(3))
-print(nums)
+# #요소 검색
+# nums = list(range(3))
+# print(nums)
 
-nums += [100, 10]
-print(nums)
+# nums += [100, 10]
+# print(nums)
 
-print(nums[3])
+# print(nums[3])
 
 
-#값 in 리스트 = 리스트에 값이 있는지 확인
-print(3 in nums) # 3 없어서 False
-print(10 in nums) # 10 있어서 True
+# #값 in 리스트 = 리스트에 값이 있는지 확인
+# print(3 in nums) # 3 없어서 False
+# print(10 in nums) # 10 있어서 True
+
+# #내림차순 = sort() -> reverse()
+
+# nums.sort()
+# print(nums)
+
+# nums.reverse()
+# print(nums)
+
+# print(range(3))
+
+
+#튜플
+
+# 여러개의 값을 리턴할 때 사용
+
+# t = ()
+# print(t)
+
+# xy = (2560, 1440)
+# print(xy)
+
+# color = 129, 247, 216
+# print(color)
+
+# print(xy + color)
+# print(xy * 2)
+
+color = 129, 247, 216 #패킹 = 괄호를 하나로 생략해도 묶어서 대입, 여러 개로 대입할 때도 하나씩 들어감
+red, green, blue = color  #언패킹
+
+print(red)
+print(green)
+print(blue)
+x, y = 1920, 1080
+print(x)
+print(y)

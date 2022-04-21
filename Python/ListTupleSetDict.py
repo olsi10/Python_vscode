@@ -263,3 +263,46 @@ nums = list(range(3))
 #append, extend 차이
 #append (리스트가 안에 통째로 들어감)
 #extend (값만 들어감 (확장))
+
+nums.append(20)
+print(nums)
+
+nums.append([30, 31])
+print(nums)
+
+nums.insert(2, 40)
+print(nums)
+
+nums.extend([50, 51])
+print(nums)
+
+nums[7] = 60
+print(nums[7]) #[30, 31]
+
+del nums[2]
+print(nums)
+
+print(nums.remove(20))
+
+nums.pop()
+print(nums)
+
+nums.pop(5)
+print(nums)
+
+nums.clear()
+print(nums)
+
+nums = list(range(3))
+print(nums)
+
+nums += [100, 10]
+print(nums)
+
+print(nums[3])
+
+for nums in 3:
+    print(nums)
+
+for nums in 10:
+    print(nums)

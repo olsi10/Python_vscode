@@ -160,20 +160,96 @@
 
 # 리스트 내부에 있는 mutable 요소를 보면 arr1[2], arr2[2]에 있는 리스트 [11, 22]는 각각 주소가 다름
 
-#################################################################################
+# ################################################################################
 
-# 얕은 복사 (값이 아닌 주소 참조, 같은 곳을 가리킴)
-arr1 = [1,2,3]
-arr2 = arr1
+#얕은 복사 (=) (값이 아닌 주소 참조, 같은 곳을 가리킴)
+# arr1 = [1,2,3]
+# arr2 = arr1
 
-print(f"arr1 : {arr1} \t 주소 : {hex(id(arr1))}")
-print(f"arr2 : {arr2} \t 주소 : {hex(id(arr2))}")
+# print(f"arr1 : {arr1} \t 주소 : {hex(id(arr1))}")
+# print(f"arr2 : {arr2} \t 주소 : {hex(id(arr2))}")
+
+# print()
+
+# # 내용물에 4 추가
+# arr1.append(4)
+
+# # arr1과 arr2에 4 추가됨
+# print(f"arr1 : {arr1} \t 주소 : {hex(id(arr1))}")
+# print(f"arr2 : {arr2} \t 주소 : {hex(id(arr2))}")
+
+# print("=" * 50)
+
+# arr1 = [4, 5, 6, [2, 4, 8]]
+# arr2 = arr1[:] #여기서 복사
+
+# print(f"arr1 : {arr1} \t 주소 : {hex(id(arr1))}")
+# print(f"arr2 : {arr2} \t 주소 : {hex(id(arr2))}")
+
+# print("\n arr2 22추가")
+
+# arr2.append(22)
+
+# print(f"arr1 : {arr1} \t 주소 : {hex(id(arr1))}")
+# print(f"arr2 : {arr2} \t 주소 : {hex(id(arr2))}")
+
+# print(f"arr1[3] : {arr1[3]} \t 주소 : {hex(id(arr1[3]))}")
+# print(f"arr2[3] : {arr2[3]} \t 주소 : {hex(id(arr2[3]))}")
+
+# arr1[3].append(99)
+
+# print("arr1[3].append(99)")
+
+# print(f"arr1[3] : {arr1[3]} \t 주소 : {hex(id(arr1[3]))}")
+# print(f"arr2[3] : {arr2[3]} \t 주소 : {hex(id(arr2[3]))}")
+
+# print(f"arr1 : {arr1} \t 주소 : {hex(id(arr1))}")
+# print(f"arr2 : {arr2} \t 주소 : {hex(id(arr2))}")
+# 완전한 깊은 복사도 아니고 완전한 얕은 복사도 아니다. 고로 얕은 복사
+
+# 깊은 복사 같지만 두 내부 리스트가 동일한 곳을 가리키기 때문에 얕은 복사
+# [:] mutable 안에 mutable 있을 때 사용
+
+#####################################################################################
+
+# copy 메서드
+
+# = 주소 동일
+# [:] 주소 다름, 내부주소 동일
+
+print('=' * 50)
+arr1 = [4, 5, 6, [2, 4, 8]]
+arr2 = arr1.copy() # 깊은 복사처럼 보이지만 주소 복사가 안되므로 얕은 복사
+print("1. 전체 춮력")
+print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
 
 print()
 
-# 내용물에 4 추가
-arr1.append(4)
+arr2.append(22)
+print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
 
-# arr1과 arr2에 4 추가됨
-print(f"arr1 : {arr1} \t 주소 : {hex(id(arr1))}")
-print(f"arr2 : {arr2} \t 주소 : {hex(id(arr2))}")
+# 리스트 속 리스트
+
+import copy
+
+print("copy")
+
+print()
+
+arr1 = [4, 5, 6, [2, 4, 8]]
+arr2 = copy.copy(arr1)
+
+print("1. 전체 출력")
+
+print()
+
+print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
+
+print()
+
+arr2.append(22)
+print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')

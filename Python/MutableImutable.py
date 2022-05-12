@@ -217,39 +217,111 @@
 # = 주소 동일
 # [:] 주소 다름, 내부주소 동일
 
-print('=' * 50)
-arr1 = [4, 5, 6, [2, 4, 8]]
-arr2 = arr1.copy() # 깊은 복사처럼 보이지만 주소 복사가 안되므로 얕은 복사
-print("1. 전체 춮력")
-print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
-print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
+# print('=' * 50)
+# arr1 = [4, 5, 6, [2, 4, 8]]
+# arr2 = arr1.copy() # 깊은 복사처럼 보이지만 주소 복사가 안되므로 얕은 복사
+# print("1. 전체 춮력")
+# print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+# print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
 
-print()
+# print()
 
-arr2.append(22)
-print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
-print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
+# arr2.append(22)
+# print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+# print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
 
 # 리스트 속 리스트
 
+# import copy
+
+# print("copy")
+
+# print()
+
+# arr1 = [4, 5, 6, [2, 4, 8]]
+# arr2 = copy.copy(arr1)
+
+# print("1. 전체 출력")
+
+# print()
+
+# print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+# print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
+
+# print()
+
+# arr2.append(22)
+# print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+# print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
+
+# print()
+
+# print(f'arr1[3] :  {arr1[3]}, add : {hex(id(arr1[3]))}')
+# print(f'arr2[3] :  {arr2[3]}, add : {hex(id(arr2[3]))}')
+
+# # copy.copy =  얕은 복사
+
+### Dict
+
+# print()
+
+# import copy
+# d1 = { 'a' : 'Mirim', 'b' : [ 1,2,3]}
+# d2 = copy.copy(d1)
+
+# print("1. 전체 출력")
+# print(f'd1 : { d1}, address : {hex(id(d1))}')
+# print(f'd2 : { d2}, address : {hex(id(d2))}')
+
+# # 딕셔너리를 이용해도 리스트와 동일하게 주소가 다르게 나옴
+
+# print()
+
+# d2['c'] = 'Kimchi'
+# print("d2['c] = kimchi")
+# print(f'd1 : { d1}, address : {hex(id(d1))}')
+# print(f'd2 : { d2}, address : {hex(id(d2))}')
+
+# print()
+
+# print("3. 딕셔너리의 내부 리스트")
+# print(f"d1['b'] : {d1['b']}, address : {hex(id(d1['b']))}")
+# print(f"d2['b'] : {d2['b']}, address : {hex(id(d2['b']))}")
+
+# print()
+
+# print("4. 내부 리스트에 값 추가")
+
+# d1['b'].append('No')
+
+# print(f"d1['b'] : {d1['b']}, address : {hex(id(d1['b']))}")
+# print(f"d2['b'] : {d2['b']}, address : {hex(id(d2['b']))}")
+
+
+# 깊은 복사 Deepcopy
+
+# 값만 복사하여 객체를 복사하지 않는 복사
+
 import copy
 
-print("copy")
+print("=" * 50)
 
-print()
+arr1 = [1,2, [99, 88, 77], 3]
+arr2 = copy.deepcopy(arr1) # copy 모듈 깊은 ㅁ볷사
 
-arr1 = [4, 5, 6, [2, 4, 8]]
-arr2 = copy.copy(arr1)
+print("전체 출력")
 
-print("1. 전체 출력")
+print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
 
-print()
+arr1.append(0)
+
+print("arr1.append(0)")
 
 print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
 print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
 
 print()
 
-arr2.append(22)
-print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
-print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
+print(f'arr1[2] :  {arr1[2]}, add : {hex(id(arr1[2]))}')
+print(f'arr2[2] :  {arr2[2]}, add : {hex(id(arr2[2]))}')

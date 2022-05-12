@@ -302,26 +302,45 @@
 
 # 값만 복사하여 객체를 복사하지 않는 복사
 
-import copy
+# import copy
 
-print("=" * 50)
+# print("=" * 50)
 
-arr1 = [1,2, [99, 88, 77], 3]
-arr2 = copy.deepcopy(arr1) # copy 모듈 깊은 ㅁ볷사
+# arr1 = [1,2, [99, 88, 77], 3]
+# arr2 = copy.deepcopy(arr1) # copy 모듈 깊은 ㅁ볷사
 
-print("전체 출력")
+# print("전체 출력")
 
-print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
-print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
+# print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+# print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
 
-arr1.append(0)
+# arr1.append(0)
 
-print("arr1.append(0)")
+# print("arr1.append(0)")
 
-print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
-print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
+# print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+# print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
 
-print()
+# print()
 
-print(f'arr1[2] :  {arr1[2]}, add : {hex(id(arr1[2]))}')
-print(f'arr2[2] :  {arr2[2]}, add : {hex(id(arr2[2]))}')
+# print(f'arr1[2] :  {arr1[2]}, add : {hex(id(arr1[2]))}')
+# print(f'arr2[2] :  {arr2[2]}, add : {hex(id(arr2[2]))}')
+
+# arr1[2].append(10)
+
+# print()
+
+# print(f'arr1[2] :  {arr1[2]}, add : {hex(id(arr1[2]))}')
+# print(f'arr2[2] :  {arr2[2]}, add : {hex(id(arr2[2]))}')
+
+# print()
+
+# print(f'arr1 :  {arr1}, add : {hex(id(arr1))}')
+# print(f'arr2 :  {arr2}, add : {hex(id(arr2))}')
+
+# deep copy는 무조건 import 시키고 copy.deppcopy만 사용함
+
+
+# 5월 달 내로 봄 다다음주 쯤? 26일쯤, 지금 주는 유형, 오픈북 나이스~!~!~!~!
+
+

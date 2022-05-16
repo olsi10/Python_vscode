@@ -1,17 +1,17 @@
 # mutable - 변경되는 객체 (객체 상태 변경 가능)
-# imutable - 변경되지 않는 객체 (객체 상태 변경 불가능)
+# immutable - 변경되지 않는 객체 (객체 상태 변경 불가능)
 
 # mutable -> list, set, dict
-# imutable -> int, float, tuple, str, bool
+# immutable -> int, float, tuple, str, bool
 
 # mutable은 값이 변경될 수 있는 객체의 경우 모든 객체를 각각 생성해서 참조
-# imutable은 값이 같은 경우 변수에 상관없이 동일한 곳 참조
+# immutable은 값이 같은 경우 변수에 상관없이 동일한 곳 참조
 
 a = 99
 b = 99
 c = 99
 
-print("imutable 객체")
+print("immutable 객체")
 print(hex(id(a)))
 print(hex(id(b)))
 print(hex(id(c)))
@@ -27,7 +27,7 @@ print(hex(id(arr2)))
 print(hex(id(arr3)))
 # 리스트 (mutable)는 값이 변할 수 있다. 각각의 주소 생성해서 참조한다.
 
-# mutable과 imutable의 차이 : mutable은 append()와 같이 값이 자유롭게 바뀔 수 있기에
+# mutable과 immutable의 차이 : mutable은 append()와 같이 값이 자유롭게 바뀔 수 있기에
 # 각각의 메모리를 할당해주는 게 관리에 용이하다 판단한 듯
 
 print()
@@ -71,4 +71,62 @@ arr2 = arr1[:] # 얕은 복사
 
 print(f'arr1 : {arr1}, 주소 : {hex(id(arr1))}')
 print(f'arr2 : {arr1}, 주소 : {hex(id(arr2))}')
+
+# immutable 객체 
+
+print("=" * 50)
+print("immutable 객체 예제.")
+print("=" * 50)
+print("1. int 값이 변경되면?")
+
+print()
+
+num1 = 99
+num2 = 99
+num3 = 99
+num4 = 99
+
+print(f"num1 값 : {num1} \t주소 : {hex(id(num1))}")
+print(f"num2 값 : {num2} \t주소 : {hex(id(num2))}")
+print(f"num3 값 : {num2} \t주소 : {hex(id(num3))}")
+print(f"num4 값 : {num4} \t주소 : {hex(id(num4))}")
+
+print()
+
+num1 += 1 # num1 값 증가 
+num3 += 1 # num3 값 증가 
+num4 += 10 # num4 값 증가 
+
+print(f"num1 값 : {num1} \t주소 : {hex(id(num1))}")
+print(f"num2 값 : {num2} \t주소 : {hex(id(num2))}")
+print(f"num3 값 : {num3} \t주소 : {hex(id(num3))}")
+print(f"num4 값 : {num4} \t주소 : {hex(id(num4))}")
+# 값을 변경했을 때도 값이 같은 경우 같은 주소를 참조.
+
+print("\n2. str 값이 변경되면?")
+s1 = "BlockDMask"
+s2 = "BlockDMask"
+s3 = "BlockDMask"
+s4 = "BlockDMask"
+
+print(f"s1 값 : {s1} \t주소 : {hex(id(s1))}")
+print(f"s2 값 : {s2} \t주소 : {hex(id(s2))}")
+print(f"s3 값 : {s3} \t주소 : {hex(id(s3))}")
+print(f"s4 값 : {s4} \t주소 : {hex(id(s4))}")
+
+print()
+
+s1 = s1.replace('D', 'ZZZ') # replace 로 값을 변경하고, 새로운 문자열을 s1에 대입하게됨. 
+s2 = "BlockZZZMask" # replace 로 변경한 문자열과 동일한 문자열로 변경함
+s4 = s3.upper() # s4를 대문자로 변경
+
+print(f"s1 값 : {s1} \t주소 : {hex(id(s1))}")
+print(f"s2 값 : {s2} \t주소 : {hex(id(s2))}")
+print(f"s3 값 : {s3} \t주소 : {hex(id(s3))}")
+print(f"s4 값 : {s4} \t주소 : {hex(id(s4))}")
+# 값을 변경했을 때도 값이 같은 경우 같은 주소를 참조. String도 int와 같다.
+# 다른 거 하나가 있다면 항상 같은 곳을 참조 하지 않는 것.
+# 여기서 중요한 것 : immutable 객체는 거의 대부분 같은 값을 참조
+
+print()
 

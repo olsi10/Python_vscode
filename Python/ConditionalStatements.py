@@ -36,10 +36,23 @@
 # else:
 #     print("걸어가기")
 
-pocket = ['paper', 'cellphone', 'money', 'card']
+# pocket = ['paper', 'cellphone', 'money', 'card']
 
-if 'money' in pocket: # if 'money' not in money: print("카드 꺼내")도 가능하다
-    pass
-else:
-    print("카드 꺼내")
-print("수행 완료")
+# if 'money' in pocket: # if 'money' not in money: print("카드 꺼내")도 가능하다
+#     pass
+# else:
+#     print("카드 꺼내")
+# print("수행 완료")
+
+# if 'money' or 'card' in pocket:
+#     print("택시")
+# else:
+#     print("걸어")
+
+saying = "Life is too short, you need python"
+
+if "wife" in saying : print("wife")
+elif "pyhton" in saying and "you" not in saying : print("python")
+elif "shirt" not in saying : print("shirt") #출력후 끝
+elif "need" in saying : print("need")
+else : print("none")

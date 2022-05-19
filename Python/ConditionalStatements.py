@@ -29,9 +29,17 @@
 # print("타고")
  #   print("가자")
 
-money = 2000
-card = 1 # True
-if money >= 3000 or card:
-     print("택시 타기")
+# money = 2000
+# card = 1 # True
+# if money >= 3000 or card:
+#      print("택시 타기")
+# else:
+#     print("걸어가기")
+
+pocket = ['paper', 'cellphone', 'money', 'card']
+
+if 'money' in pocket: # if 'money' not in money: print("카드 꺼내")도 가능하다
+    pass
 else:
-    print("걸어가기")
+    print("카드 꺼내")
+print("수행 완료")

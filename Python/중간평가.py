@@ -7,11 +7,11 @@ print('숫자 :  ' + residentNum[7:])
 
 print()
 
-list = [1, 3, 5, 4, 2]
-print('원본 : ', list)
-list.sort()
-list.reverse()
-print('결과 ', list)
+#list = [1, 3, 5, 4, 2]
+#print('원본 : ', list)
+#list.sort()
+#list.reverse()
+#print('결과 ', list)
 
 print()
 
@@ -33,3 +33,18 @@ print('추출된 B의 값', b)
 
 print()
 
+e = [1,1,1,2,2,3,3,3,4,4,5]
+print('원본 : ', e)
+
+f = set(e)
+e = list(f)
+
+print('중복제거 후 : ', e)
+
+a=b=[1,2,3]
+a[1] = 4
+print(a)
+print(b)
+
+print(hex(id(a)))
+print(hex(id(b)))

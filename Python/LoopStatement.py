@@ -18,3 +18,7 @@ for x in range(3, 9, 2): # 3부터 (9-1)까지 2 증가하는 수
 
 for ch in "LOVE":
     print(ch)
+
+ch = [3, 4, 5, 6]
+
+print(*ch, end = '') # end = '' 는 줄바꿈 하지 않는다는 표시!

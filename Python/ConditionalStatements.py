@@ -75,3 +75,19 @@ print(bool([1,2,3]))
 
 # 파이썬은 if, if elif, if elif elif 를 대체할 switch~case가 없음
 # 스위치 예약어 XXXXXXXX 조심!!
+
+while 1:
+
+    num = int(input("숫자 입력 :"))
+
+    if num < 0:
+        if num % 2 == 0:
+            print("minus / odd")
+        else:
+            print("minus / even")
+
+    elif num > 0:
+        if num % 2 == 0:
+            print("positive num / odd")
+        else:
+            print("positive num / even")

@@ -7,13 +7,11 @@ print('숫자 :  ' + residentNum[7:])
 
 print()
 
-#list = [1, 3, 5, 4, 2]
-#print('원본 : ', list)
-#list.sort()
-#list.reverse()
-#print('결과 ', list)
-
-print()
+# list = [1, 3, 5, 4, 2]
+# print('원본 : ', list)
+# list.sort()
+# list.reverse()
+# print('결과 ', list)
 
 str = ['Life', 'is', 'too', 'short']
 i = " ".join(str)

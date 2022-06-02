@@ -71,4 +71,7 @@ print(bool(3))
 print(bool(""))
 print(bool("test"))
 print(bool([]))
-print(bool[1,2,3]))
+print(bool([1,2,3]))
+
+# 파이썬은 if, if elif, if elif elif 를 대체할 switch~case가 없음
+# 스위치 예약어 XXXXXXXX 조심!!

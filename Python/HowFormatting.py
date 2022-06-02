@@ -6,10 +6,15 @@
 # s1 = 'name : {0}'.format('Mirim')
 # print(s1)
 
-# for a in range(2, 10):
-#     print('{0}단'.format(a))
-#     for b in range(1, 10):
-#         print('{0} * {1} = {2:2}'.format(a, b, a*b))
+# a = 3
+# b = 2
+# s = "구구단 {0} x {1} = {2}".format(a, b, a *b)
+# print(s)
+
+for a in range(2, 10):
+    print('{0}단'.format(a))
+    for b in range(1, 10):
+        print('{0} * {1} = {2}'.format(a, b, a*b))
 
 # #############들여쓰기의 중요성
 # for a in range(2, 10):

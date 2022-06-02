@@ -51,10 +51,24 @@
 # else:
 #     print("걸어")
 
-saying = "Life is too short, you need python"
+# saying = "Life is too short, you need python"
 
-if "wife" in saying : print("wife")
-elif "pyhton" in saying and "you" not in saying : print("python")
-elif "shirt" not in saying : print("shirt") #출력후 끝
-elif "need" in saying : print("need")
-else : print("none")
+# if "wife" in saying : print("wife")
+# elif "pyhton" in saying and "you" not in saying : print("python")
+# elif "shirt" not in saying : print("shirt") #출력후 끝
+# elif "need" in saying : print("need")
+# else : print("none")
+
+###### 0620 조건식
+
+# 거짓 : 정수 계열의 0, 실수 계열의 0, 시퀀스 계열의 (), {}, [], "", None
+# 참   : 0이 아니면, 빈 문자열이 아니면 ,빈 객체가 아니면
+
+print(bool(True))
+print(bool(False))
+print(bool(0))
+print(bool(3))
+print(bool(""))
+print(bool("test"))
+print(bool([]))
+print(bool[1,2,3]))

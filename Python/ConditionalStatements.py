@@ -29,6 +29,8 @@
 # print("타고")
  #   print("가자")
 
+ # 오류, 마지막 줄에 단독 들여쓰기 불가
+
 # money = 2000
 # card = 1 # True
 # if money >= 3000 or card:

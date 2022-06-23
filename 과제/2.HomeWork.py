@@ -85,14 +85,29 @@ star()
 # 숫자가 있고 그 숫자가 다르다면 소수가 아니다.
 # 만약 나누어 떨어진 숫자가 n과 같다면 그 수는 소수이다.
 
-num = int(input("숫자 입력"))
+# n = int(input("숫자 입력 : "))
 
+# for i in range(2, n + 1):
+#     if n % i == 0:
+#         if(n == 1):
+#             print("소수")
+#             break
+#         else:
+#             print("소수가 아님")
+#             break
 
-def decimal(n):
-    for i in range(2, n):
-        if n % i == 0:
-            return False
-        else:
-            return True
+# 89p
 
-print(decimal(num))
+# 1. 1~100 홀수 출력
+# for i in range(1, 100, +1):
+#     if i % 2 == 1:
+#         print(i)
+
+# # 2. 100~200까지 3으로 나누어 떨어지는 수를 출력
+# for i in range(100, 200, +1):
+#     if i % 3 == 0:
+#         print(i)
+
+# 3. 소수 구하는 프로그램 (위에 적음!)
+
+# 4. 1~100중 소수가 몇 개인지

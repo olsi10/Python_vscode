@@ -106,12 +106,82 @@
 
 # rolling_dice()
 
-import random
+# import random
 
-def rolling_dice(pip):
-    n = random.randint(1, pip)
-    print(pip, "면 주사위 굴린 결과 :", n)
+# def rolling_dice(pip):
+#     n = random.randint(1, pip)
+#     print(pip, "면 주사위 굴린 결과 :", n)
 
-rolling_dice(4)
-rolling_dice(16)
-rolling_dice(20)
+# rolling_dice(4)
+# rolling_dice(16)
+# rolling_dice(20)
+
+# import random
+
+# def rolling_dice(pip, repeat):
+#     for r in range(1, repeat + 1):
+#         n = random.randint(1, pip)
+#         print(pip, "면 주사위 굴린 결과 :", r, " : ", n)
+
+# rolling_dice(4, 3)
+# rolling_dice(16, 2)
+# rolling_dice(20, 4)
+
+# def func_sum(i):
+#     sum = 0
+#     num = i.split()
+#     print(num)
+#     for n in range(len(num)):
+#         sum += int(num[n])
+#     return sum
+
+# in_list = input("데이터 입력 : ")
+# print("합 : ", func_sum(in_list))
+
+################## 가변 인수
+
+# def p(*args):
+#     str = ""
+#     for a in args:
+#         str += a
+#     print(str)
+
+# p("♡")
+# p("♡♩")
+# p("♡♩♣ ♠")
+
+
+# def p(space, space_num, *args):
+#     str = args[0]
+#     for i in range(1, len(args)):
+#         str = str + (space * space_num) + args[i]
+#     print(str)
+
+# p(", ", 3, "♡ ", "♩ ")
+# p("☆ ", 2, "♡ ", "♩ ", "♣ ")
+# p("_ ", 3, "♡ ", "♩ ", "♣ ", "♠ ")
+
+# 임의의 개수의 인자를 받는 함수를 가리켜 가변 인자를 사용
+# * 기호를 붙히면 이 자리 이후로 여러 개의 파라미터가 붙을 수 있음
+# 가변인수는 매개변수 목록 중 가장 마지막에 배치
+
+
+# 109p 혼자 해 보기
+
+# def star(i, *cnt):
+#     for a in cnt:
+#         print(a * i)
+
+# star("♬ ", 3)
+# star("♡ ", 1, 2, 3) # 2, 3은 가변
+
+# # 다른 방법
+
+# def star(s, *args):
+#     for i in range(0, len(args)):
+#         print(s * args[i])
+
+# star("♬ ", 3)
+# star("♡ ", 1, 2, 3) # 2, 3은 가변
+
+# 키워드 인자를 사용한 함수, 호출한 함수의 매개 변수 순서대로 호출된 함수의 인자 값이 넘겨짐

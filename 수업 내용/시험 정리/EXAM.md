@@ -129,3 +129,77 @@ d = d \* d.conjugate()
 ### 문자열 인덱싱, 슬라이싱
 
 - 맨 앞 글자 = 0 / 맨 뒤 글자 = -1
+
+![image](https://user-images.githubusercontent.com/87300199/177620055-a59377dc-8504-46f4-beec-f9f6ae75380a.png)
+
+```python
+s = "Hello Yo"
+
+print(s[:]) # 전체 출력
+print(s[0:]) # 0번째부터 끝까지
+print(s[:4]) # 맨 앞부터 4번 바로 앞까지
+
+```
+
+<br />
+
+### 문자열 함수
+
+```python
+s = "Happy"
+
+len(s) # 5
+
+s.count("p") # 2
+s.upper() # HAPPY
+s.lower() # lower
+s.replace("H", "Y") # Yappy
+s.strip() # 양쪽 공백 제거
+s.find("a") # 1
+s.rfind("p") # 1
+
+"H" in s # True
+"z" in s # False
+
+x = "01::02::03::&&"
+
+y = x.split("::")
+
+print(y) # ["01", "02", "03", "&&"]
+", ".join(y) # "01, 02, 03, &&"
+```
+
+<br />
+
+## format
+
+s = "name : {}, number : {}, scoccer : {}"
+s.format("Tom", 18, True)
+
+-> name : Tom, number : 18, scoccer : True
+
+-> "name = {name}, number : {number}, scoccer : {}".format(name = "Tom", number = 18, scoccer = True)
+
+<br />
+
+## 정수를 표현하는 여러 가지 방법
+
+"{:d}".format(515)
+
+"{5:d}}".format(515) # 최소 5칸 차지 후 정수 넣기
+
+"{:+5d}".format(515) # 양수면 + 표시
+
+"{:=+5d}".format(515) # + 맨 앞에
+
+"{:05d}".format(515) # 빈칸은 0
+
+"{:+05d}".format(515) # 양수면 0 앞에 + 표시
+
+## 실수를 표현하는 여러 가지 방법
+
+"{:f}".format(11.12)
+
+"{:12f}".format(11.12) # 최소 12칸 차지 후 실수 넣기
+
+"{:12.1f}".format(11.12) # 소수점 첫째자리까지 반올림

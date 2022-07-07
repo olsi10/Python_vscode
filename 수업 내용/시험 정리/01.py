@@ -228,12 +228,44 @@
 
 # print(food)
 
-print(set('Funny'))
+# print(set('Funny'))
 
-print(set(["my", 20, 40]))
+# print(set(["my", 20, 40]))
 
-print(set({"my": 1000, 5: 'hom'}))
+# print(set({"my": 1000, 5: 'hom'}))
 
-print(set((345, 45)))
+# print(set((345, 45)))
 
-print(set(range(3)))
+# print(set(range(3)))
+
+# game = {"FIFA", "LOL", "RIDER"}
+
+# game.add("No")
+
+# print(game)
+
+# game.update(("Yes", "Bubble"))
+# # 괄호 두 번 감싸는 이유 : 괄호 한 겹은 문자열로 이해하기 때문에 한글자씩 요소로 들어감
+
+# print(game)
+
+# game.remove("LOL")
+
+# print(game)
+
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+
+print(a & b)
+print(a.intersection(b))
+
+print(a | b)
+print(a.union(b))
+
+print(a - b)
+print(b - a)
+
+print(a.difference(b))
+
+print(a ^ b)
+print(a.symmetric_difference(b))

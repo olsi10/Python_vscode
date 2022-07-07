@@ -417,4 +417,66 @@ set("Funny") # 'n', 'F', 'y', 'u'
 - set(딕셔너리) = 딕셔너리의 키가 각 요소로 하나씩 들어간다.
   -set(range()) = range() 함수의 각 요소가 셋에 하나씩 들어간다.
 
+  <br />
+
+![image](https://user-images.githubusercontent.com/87300199/177854416-5192c0fa-3bef-491e-ba83-570d70cf447d.png)
+![image](https://user-images.githubusercontent.com/87300199/177854438-ae3062ac-7dd5-48b5-86fa-093eb4efc665.png)
+
 <br />
+
+set.add() <- 요소 추가 <br />
+set.update() <- 여러 요소 추가 (괄호 두 개 하는 이유, 문자열이 한 글자씩 요소로 들어가는 거 방지)
+set.remove() <- 요소 삭제
+<br />
+
+| 셋 연산                 | 내용        |
+| :---------------------- | :---------- |
+| &, intersection         | 교집합      |
+| ㅣ, union               | 합집합      |
+| -, difference           | 차집합      |
+| ^, symmetric_difference | 대칭 차집합 |
+
+  <br />
+
+---
+
+  <br />
+
+# 리스트, 딕셔너리, 튜플 추가
+
+|       /        |   리스트   |     튜플      |           딕셔너리           |           셋           |
+| :------------: | :--------: | :-----------: | :--------------------------: | :--------------------: |
+|     공통점     |  여러개의  | 자료를 하나으 |       덩어리로 묶어서        | 다룰 수 있는 자료 구조 |
+|      형식      | [값1, 값2] |  (값1, 값2)   |    {키1 : 값1, 키2 : 값2}    |       {값1, 값2}       |
+| 빈자료형 생성  |     []     |      ()       |              {}              |         set()          |
+|    생성함수    |   list()   |    tuple()    |            dict()            |         set()          |
+| 요소 수정 유무 |     O      |       X       |              O               |           O            |
+| 요소 순서 유무 |     O      |       O       | 순서는 있지만 키로 값을 찾음 |           X            |
+
+<br />
+
+# 문자열, 리스트, 튜플과 쓸 수 있는 함수
+
+<br />
+
+- reversed() : 요소의 인덱스가 0부터 차례대로 매겨지는 자료형의 순서를 거꾸로
+
+```python
+list(reversed(["Happy", "BirthDay"])) # [Birthday], [Happy]
+```
+
+<br />
+
+# 문자열, 리스트, 튜플, 딕셔너리와 쓸 수 있는 함수
+
+<br />
+
+- enumerate() : "열거하다" 라는 뜻으로 인덱스와 값 리턴
+
+```python
+for i, value in enumerate(("funny", "Python")):
+    print(i, value)
+
+# 0 funny
+# 1 Python
+```

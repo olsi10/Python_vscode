@@ -34,3 +34,22 @@
 
 # for i in range(3):
 #     print(i)
+
+t = ()
+
+xy = (10, 20)
+ij = 129, 247
+
+print(xy + ij)
+
+print(xy * 2)
+
+color = 129, 293, 404
+
+print(color)  # 패킹
+red, green, blue = color  # 언 패킹
+
+print(red)
+print(green)
+print(blue)
+

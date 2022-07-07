@@ -274,3 +274,62 @@ range(start, stop, step) = start 이상 stop 미만 step씩 더한 range 리턴 
 <br />
 
 # 튜플 총 정리
+
+- 여러 값이 있지만 하나의 그룹으로 다룸
+- 수정 불가
+
+<br />
+
+```python
+t = ()
+xy = 1, 2, 3, 4
+color = 129, 145, 10
+
+xy + color # 1, 2, 3, 4, 129, 145, 10
+xy * 2 # 1, 2, 3, 4, 1, 2, 3, 4
+```
+
+## 패킹 언패킹
+
+- 요소 뒤에 콤마를 다 붙이면 튜플이 된다고 보면 됨!
+
+```python
+color = 129, 247, 215 # 패킹 (129, 247, 216) <br />
+red, green, blue = color # 언패킹 <br />
+red -> 129 <br />
+green 247
+```
+
+<br />
+
+---
+
+### swap!
+
+```python
+x, y = 10, 20
+
+x -> 10
+y -> 20
+```
+
+<br />
+
+---
+
+<br />
+
+## 튜플 함수
+
+index() 괄호 안 요소의 인덱스 값을 구함(위치)
+count() 몇 개 있는지 개수 셈
+
+```python
+a = [123, 'ABC', True, 123]
+
+a.index(123) # 0
+a.index(True) # 2
+
+a.count(123) # 2
+a.count('ABC')
+```

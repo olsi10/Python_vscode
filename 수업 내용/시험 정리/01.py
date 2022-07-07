@@ -202,29 +202,38 @@
 # print(a.count(123))
 # print(a.count('abc'))
 
-food = {"name" : "kimch", 5 : "won", "hot" : True}
+# food = {"name" : "kimch", 5 : "won", "hot" : True}
 
-print(food)
+# print(food)
 
-food["price"] = 5000 # 키와 값 추가
+# food["price"] = 5000 # 키와 값 추가
 
-print(food)
-
-
-food["name"] = "kimbab" # 값 변경
-
-print(food)
+# print(food)
 
 
-del food[5] # 삭제
-print(food)
+# food["name"] = "kimbab" # 값 변경
+
+# print(food)
 
 
-food.pop("hot")
+# del food[5] # 삭제
+# print(food)
 
-print(food)
 
-food.clear()
+# food.pop("hot")
 
-print(food)
+# print(food)
 
+# food.clear()
+
+# print(food)
+
+print(set('Funny'))
+
+print(set(["my", 20, 40]))
+
+print(set({"my": 1000, 5: 'hom'}))
+
+print(set((345, 45)))
+
+print(set(range(3)))

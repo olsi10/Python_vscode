@@ -333,3 +333,64 @@ a.index(True) # 2
 a.count(123) # 2
 a.count('ABC')
 ```
+
+---
+
+<br />
+<br />
+
+# 딕셔너리 총 정리
+
+- 키와 값 구성
+- 수정 가능
+
+<br />
+
+```python
+food = {"name" : "kimch", 5 : "won", "hot" : True}
+
+food["price"] = 5000 # 키와 값 추가
+
+food["name"] = "kimbab" # 값 변경
+
+del food[5] # 삭제
+food.pop("hot") # 삭제와 동시에 반환
+
+food.clear() # 전부 삭제
+```
+
+<br />
+
+```python
+food = {"name" : "kimch", 5 : "won", "hot" : True}
+
+food["name"] # kimchi 키 name의 값 kimchi를 가져옴
+food.get("name") # 위와 동일
+
+"name" in food # True
+"zoo" in food # False
+
+"kimchi" in food # True
+True in food # True
+
+"kimchi" in food.valuse() # True
+
+```
+
+<br />
+
+## 키 in 딕셔너리 = 딕셔너리에 키가 있는지 확인 <br />
+## 값 in 딕셔너리.values() = 딕셔너리에 값이 있는지 확인
+
+<br />
+
+```python
+len(food) # 3
+
+food.keys() # 딕셔너리 키들을 dict_keys 객체로 리턴
+food.valuse() # 딕셔너리 값들을 dict_valuse 객체로 리턴
+food.itmes() # 딕셔너리 키와 값을 쌍으로 묶어 dict_items 객체로 리턴
+```
+
+<br />
+

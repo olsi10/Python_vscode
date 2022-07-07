@@ -140,16 +140,15 @@
 
 ################## 가변 인수
 
-# def p(*args):
+# def p(*s):
 #     str = ""
-#     for a in args:
+#     for a in s:
 #         str += a
 #     print(str)
 
 # p("♡")
-# p("♡♩")
-# p("♡♩♣ ♠")
-
+# p("♡ ♩")
+# p("♡ ♩ ♣  ♠")
 
 # def p(space, space_num, *args):
 #     str = args[0]
@@ -188,9 +187,138 @@
 
 # 116~117
 
-def fn(a,b,c,d,e):
-    print(a,b,c,d,e)
+# def fn(a,b,c,d,e):
+#     print(a,b,c,d,e)
 
-fn(1,2,3,4,5)
-fn(a=1, b=2,c=3,d=4,e=5)
-fn(e=5,d=4,c=3,b=2,a=1)
+# fn(1,2,3,4,5)
+# fn(a=1, b=2,c=3,d=4,e=5)
+# fn(e=5,d=4,c=3,b=2,a=1)
+
+# g = 1
+
+# def Scope(a):
+#     global g # 전역방 하나만 잡음
+#     g = 2
+#     return g + a
+
+# print(Scope(1))
+# print(g)
+
+# # range (주관식) / 시험 문제 교집합
+
+# def func_sum(i):
+#     sum = 0
+#     num = i.split()
+#     print(num)
+#     for n in range(len(num)):
+#         sum += int(num[n])
+#     return sum
+
+# in_list = input("데이터 입력 : ")
+# print("합 : ", func_sum(in_list))
+
+# def union(*str):
+#     c = []
+#     for item in str:
+#         for i in item: 
+#             if i not in c:
+#                 c.append(i)
+#     return c
+        
+
+# print(union("HAM", "EGG"))
+# print(union("HAM", "EGG", "SPAM"))
+
+# def gugudan(dan = 2):
+#     for i in range(dan):
+#         for j in range(i, 10 + 1):
+#             print("{} * {} = {}".format(i, j, i * j))
+
+# gugudan(3)
+
+# def setValue(newValue):
+#     x=  newValue
+
+# retValue = setValue(10)
+# print(retValue) # None 리턴값 x
+
+# def swap(x, y):
+#     return y, x
+
+# print(swap(1, 2)) # 튜플로 리턴한다. 
+# retValue = swap(1, 2)
+# print(retValue[0], retValue[1]) # 튜플을 빼고 싶다면 이렇게
+
+# def sum(*args):
+#     sum = 0
+#     for i in args:
+#         sum += i
+#     return sum
+
+# result = sum(1, 3)
+# print("1 + 3 = ", result)
+# print("1 + 3 + 5 + 7 = ", sum(1, 3, 5, 7))
+
+
+# def min(*args):
+#     minNum = args[0]
+#     for i in args:
+#         if minNum > i:
+#             minNum = i
+#     return minNum
+
+# result = min(1, 3)
+
+# print("min(1, 3) = ", result)
+# print("min(0, 3, -11) = ", min(0, 3, -11))
+
+# def min_max(*args):
+#     min = args[0]
+#     max = args[0]
+
+#     for i in args:
+#         if min > i:
+#             min = i
+#         if max < i:
+#             max = i
+#     return min, max
+
+# print(min_max(52, -3, 23, 89, -21))
+
+# minV, maxV = min_max(52, -3, 23, 89, -21)
+
+# print("최저값 : ", minV)
+# print("최고값 : ", maxV)
+
+# def multi_num(multi, start, end):
+#     result = list()
+#     for n in range(start, end):
+#         if n % multi == 0:
+#             result.append(n)
+#     return result
+
+# multi2 = multi_num(17, 1, 100)
+# print("multi_num(17, 1, 200 : ", multi2)
+# print()
+# multi3 = multi_num(3, 1, 100)
+# print("multi_num(3, 1, 100) : ", multi3)
+
+def div_name(name):
+    return name[0], name[1:]
+a, b = div_name("최윤영")
+
+print("성 : ", a)
+print("이름 : ", b)
+
+# [ 표현식 for 항목 in 리스트 or 튜플 if 조건문 ]
+
+# list = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+# 리스트 안에서 for 문 사용하기 1
+# list = [ num * 3 for num in list ]
+# print(list)
+
+h = "  Happy Programming! "
+
+print(len(h))
+print(h.rfind("ap")) # 3

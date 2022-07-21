@@ -1,29 +1,47 @@
 # 2311 최윤영
 
+grade = []
+
+while True:
+    print("0 입력 >>> 종료")
+    a = int(input('<학생 점수를 입력하세요.>'))
+    grade.append(a)
+
+    if a == 0:
+        print('입력을 종료합니다.')
+        grade.pop(-1) # 0 지우기
+        break
+
+score = []
+
+star = '*'
+cnt = 0
+
+for a in grade:
+    if 100>= a >=90:
+        cnt += 1
+    elif 90 > a>=80:
+        cnt += 1
+    elif 80 > a>=70:
+        cnt += 1
+    elif 70 > a>=60:
+        cnt += 1
+    elif 60 > a >= 0:
+        cnt += 1
 
 
-# score = input("점수 입력 : ")
+print('\n====================\n')
 
-# l = []
+print("90점 이상 :" + "\t\t" + '*'*cnt)
+print("80점 대 :" + "\t\t" + '*' *cnt)
+print("70점 대 :" + "\t\t" + '*' *cnt)
+print("60점 대 :" + "\t\t" + '*' *cnt)
+print("60점 미만 :" + "\t\t" + '*' *cnt)
 
-# for i in range(len(l)):
+print("최고 점수 : ", mx)
+print("최저 점수 : ", mn)
 
-#     if l[i] >= 90:
-#         sum1 = sum1 + 1
-#     elif score[i] >= 70 and score[i] < 90:
-#         sum2 = sum2 + 1
-#     elif score[i] >= 60 and score[i] < 70:
-#         sum3 = sum3 + 1
-#     elif score[i] >= 50 and score[i] < 60:
-#         sum4 = sum4 + 1
-#     else:
-#         sum5 = sum5 + 1
-
-# print("90점 이상 :" + "\t\t" + '*'*sum1)
-# print("80점 대 :" + "\t\t" + '*' *sum2)
-# print("70점 대 :" + "\t\t" + '*' *sum3)
-# print("60점 대 :" + "\t\t" + '*' *sum4)
-# print("60점 미만 :" + "\t\t" + '*' *sum5)
-
-# print("최고 점수 : ", max)
-# print("최저 점수 : ", min)
+# for b in range(len(grade)):
+#     #문자열의 길이만큼 0부터 시작해서 b에 대입
+#     print(grade[b],':',score[b])
+#     #b에 대입되는 수의 칸에 있는 리스트를 출력

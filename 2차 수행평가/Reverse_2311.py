@@ -5,6 +5,6 @@ eng = list(input("영문자 입력 : "))
 
 eng.reverse()
 
-reEng = str(eng)
+re = ''.join(eng)
 
-print("거꾸로 출력 : ", reEng)
+print("거꾸로 출력 : ", re)

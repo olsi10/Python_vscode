@@ -2,28 +2,31 @@
 
 import random
 
-num = []
 
 def func_lotto():
-    
-    while len(num) < 6:
-        a = random.randint(1, 45)
-        if a not in num:
-            num.append(a)
-    
-    num.sort()
+    s = set()
+    cnt = 0
 
-    print(num)
+    while True:
+        s.add(random.randint(1, 45))
 
-    # n.reverse()
+        if len(s) == cnt + 1:
+            cnt += 1
 
-func_lotto()
-func_lotto()
-func_lotto()
-func_lotto()
-func_lotto()
-func_lotto()
-func_lotto()
-func_lotto()
-func_lotto()
-func_lotto()
+        if cnt == 6:
+            break
+
+    return list(s)
+
+
+for i in range(1, 10 + 1):
+    result = func_lotto()
+
+    result.sort()
+
+    print("당첨 번호 : ", end="")
+
+    for num in result:
+        print(num, "", end="")
+
+    print()

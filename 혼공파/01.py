@@ -55,3 +55,11 @@ elif birth_year == 10:
     print("말 띠입니다.")
 elif birth_year == 11:
     print("양 띠입니다.")
+
+
+def return_test():
+    return
+
+
+value = return_test()
+print(value)

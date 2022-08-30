@@ -1,6 +1,6 @@
 <div align = "center">
 
-#★P★y★t★h★o★n★
+# ★P★y★t★h★o★n★
 
 ------
 ## 학교 일정

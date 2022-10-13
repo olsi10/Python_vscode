@@ -1,3 +1,5 @@
+# 파이썬은 멤버 변수의 개념이 없기 때문에 self 키워드를 사용하여 멤버 변수에게 넣는다 라고 한다.
+
 class Person:
     def creat_info(self, name, age):
         self.name = name

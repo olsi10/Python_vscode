@@ -3,11 +3,22 @@ class Car():
         self.type = type
         self.speed = speed
         print(self.type, "객체 생성")
+    
+    def move(self):
+        print(self.type, "가", str(self.speed), "속도로 움직입니다.")
+    
+    def speed_up(self, amount):
+        self.speed += amount
+
+    def speed_down(self, amount):
+        self.speed -= amount
 
 
 c = Car('스포츠카', 200)
-c1 = Car('경차', 300)
-c2 = Car('리무진', 100)
+c.speed_up(10)
+c.move()
+c.speed_down(50)
+c.move()
 
 # print(c.type) # 스포츠카
 # print(c.speed) # 200

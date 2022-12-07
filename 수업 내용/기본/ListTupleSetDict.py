@@ -164,9 +164,9 @@
 
 # ###딕셔너리 -> DICTIONARY이지만 DICT로 씀
 
-# d = dict(a = 1, b = 2, d = 3) #키를 통해 값을 찾음
-# print(d)
-# print(type(d))
+d = dict(a = 1, b = 2, d = 3) #키를 통해 값을 찾음
+print(d)
+print(type(d))
 
 # colors = {"apple" : "red", "banana" : "yellow"} # 키 : 값
 # print(colors)

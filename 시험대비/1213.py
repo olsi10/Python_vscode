@@ -124,3 +124,35 @@
 # result = min(1, 3)
 # print("[1, 3] 중 작은 값 = ", result)
 # print("[1, 3] 중 작은 값 = ", min(-1, -11, 2, 3, 5, 7))
+
+# def multi(m, start, end):
+#     result = []
+#     for n in range(start, end):
+#         if n % m == 0:
+#             result.append(n)
+#     return result
+
+
+# multi2 = multi(17, 1, 100)
+# print("mul (17, 1, 100) = ", multi2)
+# print()
+# multi3 = multi(10, 1, 100)
+# print("mul (3, 1, 100) = ", multi3)
+
+def min_max(*args):
+    min = args[0]
+    max = args[0]
+
+    for i in args:
+        if min > i:
+            min = i
+        elif max < i:
+            max = i
+
+    return min, max
+
+
+print(min_max(52, -3, 23, 89, -21))
+min_value, max_value = min_max(52, -3, 23, 89, -21)
+print("최저값 : ", min_value)
+print("최고값 : ", max_value)

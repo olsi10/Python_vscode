@@ -139,20 +139,103 @@
 # multi3 = multi(10, 1, 100)
 # print("mul (3, 1, 100) = ", multi3)
 
-def min_max(*args):
-    min = args[0]
-    max = args[0]
+# def min_max(*args):
+#     min = args[0]
+#     max = args[0]
 
-    for i in args:
-        if min > i:
-            min = i
-        elif max < i:
-            max = i
+#     for i in args:
+#         if min > i:
+#             min = i
+#         elif max < i:
+#             max = i
 
-    return min, max
+#     return min, max
 
 
-print(min_max(52, -3, 23, 89, -21))
-min_value, max_value = min_max(52, -3, 23, 89, -21)
-print("최저값 : ", min_value)
-print("최고값 : ", max_value)
+# print(min_max(52, -3, 23, 89, -21))
+# min_value, max_value = min_max(52, -3, 23, 89, -21)
+# print("최저값 : ", min_value)
+# print("최고값 : ", max_value)
+
+# 이름을 입력받아 성과 이름을 나누어 리턴하는 함수 div_name
+# def div_name(name):
+#     name.strip()
+#     first_name = name[0]
+#     second_name = name[1:]
+#     s = "성: " + first_name + "\n" + "이름: " + second_name
+#     return s
+
+
+# myName = input("이름 입력 >>> ")
+# print(div_name(myName))
+
+# import random
+
+
+# def dice_list(pip, repeat):
+#     result = []
+#     for i in range(1, repeat + 1):
+#         dice = random.randint(1, pip)
+#         result.append(dice)
+#     return result
+
+
+# result = dice_list(6, 3)
+# print("6면 주사위 3번 굴린 결과 : ", result)
+
+
+# def circle_area(width):
+#     radius = width / 2
+#     return (radius * radius) * 3.14
+
+
+# print(circle_area(4))
+
+# def sum_avg(*args):
+#     sum_value = 0
+#     avg_value = 0
+#     arl = len(args)
+#     for i in args:
+#         sum_value = sum_value + i
+
+#     avg_value = sum_value / arl
+
+#     return sum_value, avg_value
+
+
+# print(sum_avg(1, 4, 6, 10, 9))
+# sum_value, avg_value = sum_avg(1, 4, 6, 10, 9)
+# print("합계 : ", sum_value)
+# print("평균 : ", avg_value)
+
+# def prime(start, end):
+#     result = []
+#     for i in range(start, end + 1):
+#         if i % 2 == 1:
+#             result.append(i)
+#     return result
+
+
+# result = prime(1, 5)
+# print("[1, 5] 사이의 소수는? : ", prime(1, 5))
+
+# def login(id, pw):
+#     if id == "yo" and pw == "yoo":
+#         return True
+#     else:
+#         return False
+
+
+# id = input("아이디 입력 >>> ")
+# pw = input("비번 입력 >>> ")
+
+# result = login(id, pw)
+# print("결과는? ", result)
+
+# def wc(str):
+#     str = str.replace(" ", "")
+#     return len(str)
+
+
+# result = wc("y o o")
+# print("y o o 공백을 제외한 문자열 개수 >>> ", result)
